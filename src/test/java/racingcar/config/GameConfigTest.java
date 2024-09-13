@@ -15,7 +15,7 @@ class GameConfigTest {
         InputView inputView = new InputView();
         GameConfig gameConfig = new GameConfig(inputView, null);
 
-        InputView getinputView = gameConfig.getInputView();
+        InputView getinputView = gameConfig.inputView();
 
         Assertions.assertThat(inputView).isEqualTo(getinputView);
     }
@@ -26,7 +26,7 @@ class GameConfigTest {
         OutputView outputView = new OutputView();
         GameConfig gameConfig = new GameConfig(null, outputView);
 
-        OutputView getOutputView = gameConfig.getOutputView();
+        OutputView getOutputView = gameConfig.outputView();
 
         Assertions.assertThat(outputView).isEqualTo(getOutputView);
     }
